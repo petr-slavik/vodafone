@@ -32,7 +32,7 @@ class VodafoneApplicationTests {
             //String url = args[0]; 
             //driver.get(url);
             driver.get("https://www.vodafone.cz");
-           
+
             
             WebElement btnPovolitVse = driver.findElement(By.className("vfcc__button"));
             WebElement btnTelefonyaZarizeni = driver.findElement(By.id("cf5b8462-7c47-4b18-bae5-1589717c5bf0"));
@@ -49,7 +49,7 @@ class VodafoneApplicationTests {
             if(nejsem.contentEquals("Nejsem")) {
                 System.out.println("PASS: " + nejsem);
             } else {
-                
+                System.out.println("FAIL: " + nejsem);
             }
             
             WebElement drpSTarifem = driver.findElement(By.id("tariffsSelect"));
